@@ -10,6 +10,9 @@
     <AssemblyName>CoderClothingMVC</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
+  <PropertyGroup>
+    <MvcBuildViews>true</MvcBuildViews>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -73,6 +76,9 @@
     <Folder Include="Content\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
+    <Folder Include="Views\Joe\" />
+    <Folder Include="Views\Drew\" />
+    <Folder Include="Views\Pashka\" />
     <Folder Include="Views\Paul\" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +87,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\JoeController.cs" />
+    <Compile Include="Controllers\DrewController.cs" />
+    <Compile Include="Controllers\PashkaController.cs" />
     <Compile Include="Controllers\PaulController.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -108,8 +117,18 @@
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1-vsdoc.js" />
     <Content Include="Content\main.css" />
-    <Content Include="Views\Paul\Index.cshtml" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Views\Joe\Index.cshtml" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Views\Drew\Index.cshtml" />
+    <Content Include="Views\Pashka\Index.cshtml" />
+    <Content Include="Views\Paul\Index.aspx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -119,6 +138,7 @@
     <None Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.1.1.slim.min.map" />
     <None Include="Scripts\jquery-3.1.1.min.map" />
+    <None Include="Scripts\angular.min.js.map" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

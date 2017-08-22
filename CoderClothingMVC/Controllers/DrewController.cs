@@ -6,11 +6,11 @@ using System.Web.Mvc;
 
 namespace CoderClothingMVC.Controllers
 {
-    public class PaulController : Controller
+    public class DrewController : Controller
     {
         public ActionResult Index()
         {
-            return View ();
+            return View("Index");
         }
     }
 }

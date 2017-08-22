@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace CoderClothingMVC.Controllers
 {
-    public class PaulController : Controller
+    public class PashkaController : Controller
     {
         public ActionResult Index()
         {
