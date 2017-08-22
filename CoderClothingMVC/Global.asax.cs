@@ -9,6 +9,8 @@ namespace CoderClothingMVC
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+
+            // Router - this "hijacks" the requests to the app and directs them to a controller
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
     }
